@@ -1,1 +1,0 @@
-mvn -U org.jenkins-ci.tools:maven-hpi-plugin:create
