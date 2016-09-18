@@ -5,7 +5,7 @@ ADD pom.xml .
 ADD src/ .
 ADD settings.xml /usr/share/maven/conf
 
-RUN mvn install
+RUN mvn install -DskipTests
 
-CMD mvn hpi:run -DskipTests=true
+CMD mvn hpi:run -DskipTests
 
