@@ -5,4 +5,5 @@ dependencies:
 
   post:
    - mvn package
+   - cp target/*.hpi $CIRCLE_ARTIFACT/
 
