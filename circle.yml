@@ -5,5 +5,5 @@ dependencies:
 
   post:
    - mvn test package
-   - cp target/*.hpi $CIRCLE_ARTIFACT/
+   - cp target/*.hpi $CIRCLE_ARTIFACTS/
 
