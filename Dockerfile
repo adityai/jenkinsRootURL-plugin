@@ -1,5 +1,8 @@
 FROM jenkins:latest
 MAINTAINER Aditya Inapurapu "iaditya.com"
 
-COPY ./target/rootURL.hpi /var/jenkins_home/plugins
+ADD src ./
+ADD pom.xml ./
 
+RUN mvn package install
+RUN cp target/rootURL.hpi /var/jenkins_home/plugins
