@@ -3,8 +3,9 @@ MAINTAINER Aditya Inapurapu at iaditya.com
 
 ADD pom.xml .
 ADD src/ .
+ADD settings.xml /usr/share/maven/conf
 
-RUN mvn package -DskipTests=true
-RUN apt-get install jenkins -y
-RUN cp target/*.hpi /var/jenkins_home/plugins
+RUN mvn install
+
+CMD mvn hpi:run -DskipTests=true
 
