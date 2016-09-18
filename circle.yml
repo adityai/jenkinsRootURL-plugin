@@ -4,6 +4,6 @@ dependencies:
    - sudo apt-get install openjdk-7-jdk -y
 
   post:
-   - mvn package
+   - mvn test package
    - cp target/*.hpi $CIRCLE_ARTIFACT/
 
