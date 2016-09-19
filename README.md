@@ -1,4 +1,4 @@
-[![CircleCI](https://circleci.com/gh/adityai/jenkinsRootURL-plugin/tree/master.svg?style=svg)](https://circleci.com/gh/adityai/jenkinsRootURL-plugin/tree/master)
+[![CircleCI](https://circleci.com/gh/adityai/jenkinsRootURL-plugin/tree/master.svg?style=shield)](https://circleci.com/gh/adityai/jenkinsRootURL-plugin/tree/master)
 
 # jenkinsRootURL-plugin
 A simple Jenkins plugin for adding a URL as a root action.
