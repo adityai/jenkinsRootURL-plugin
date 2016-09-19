@@ -1,11 +1,11 @@
 FROM maven
 MAINTAINER Aditya Inapurapu at iaditya.com
 
-ADD pom.xml .
-ADD src/ .
-ADD settings.xml /usr/share/maven/conf
+RUN mkdir /src
+COPY pom.xml .
+COPY src /src 
+COPY settings.xml /usr/share/maven/conf/
 
-RUN mvn install -DskipTests
-
+RUN mvn package install -DskipTests
 CMD mvn hpi:run -DskipTests
 
