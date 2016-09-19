@@ -1,11 +1,6 @@
-FROM maven
+FROM jenkins 
 MAINTAINER Aditya Inapurapu at iaditya.com
 
-RUN mkdir /src
-COPY pom.xml .
-COPY src /src 
-COPY settings.xml /usr/share/maven/conf/
+COPY target/rootURL.hpi /var/jenkins_home/plugins/
 
-RUN mvn package install -DskipTests
-CMD mvn hpi:run -DskipTests
 
